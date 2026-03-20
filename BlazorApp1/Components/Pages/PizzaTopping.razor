@@ -1,0 +1,46 @@
+@page "/Pizzas/{PizzaName}"
+@page "/Toppings/{PizzaName}"
+@using Microsoft.AspNetCore.WebUtilities
+@inject NavigationManager NavManager
+
+<PageTitle>Pizza Details</PageTitle>
+
+<h1>Buy a Pizza</h1>
+
+<p>I want to order a: <strong>@PizzaName</strong></p>
+
+@if (!string.IsNullOrEmpty(ToppingName))
+{
+    <p>I want to add this topping: <strong>@ToppingName</strong></p>
+}
+
+<div class="mt-3">
+    <NavLink href="/" Match="NavLinkMatch.All" class="btn btn-secondary me-2">
+        Home Page
+    </NavLink>
+
+    <button class="btn btn-primary" @onclick="NavigateToPaymentPage">
+        Buy this pizza!
+    </button>
+</div>
+
+@code {
+    [Parameter]
+    public string PizzaName { get; set; } = string.Empty;
+
+    private string ToppingName { get; set; } = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("extratopping", out var extraTopping))
+        {
+            ToppingName = System.Convert.ToString(extraTopping) ?? string.Empty;
+        }
+    }
+
+    private void NavigateToPaymentPage()
+    {
+        NavManager.NavigateTo("buypizza");
+    }
+}
