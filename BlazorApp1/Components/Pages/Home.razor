@@ -1,7 +1,23 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<PageTitle>Pizza Paradise</PageTitle>
 
-Welcome to your new app.
+<h1>Welcome to Pizza Paradise!</h1>
 
-<Counter IncrementAmount="10" />
+<p>Choose a pizza or explore our custom toppings:</p>
+
+<ul class="list-unstyled mt-3">
+    <li class="mb-2">
+        <NavLink href="/Pizzas/Margherita" Match="NavLinkMatch.All">Margherita Pizza</NavLink>
+    </li>
+    <li class="mb-2">
+        <NavLink href="/Pizzas/Formaggio" Match="NavLinkMatch.All">Formaggio Pizza</NavLink>
+    </li>
+    <li class="mb-2">
+        <NavLink href="/Toppings/Pepperoni" Match="NavLinkMatch.All">Pepperoni Toppings</NavLink>
+    </li>
+    <li class="mb-2">
+        <NavLink href="/Pizzas/Margherita?extratopping=pineapple" Match="NavLinkMatch.All">Margherita + Pineapple
+        </NavLink>
+    </li>
+</ul>

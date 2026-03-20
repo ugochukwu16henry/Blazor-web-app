@@ -83,3 +83,4 @@ C:\Users\Dell\Documents\Blazor-web-app\BlazorApp1\obj\Debug\net10.0\refint\Blazo
 C:\Users\Dell\Documents\Blazor-web-app\BlazorApp1\obj\Debug\net10.0\BlazorApp1.pdb
 C:\Users\Dell\Documents\Blazor-web-app\BlazorApp1\obj\Debug\net10.0\BlazorApp1.genruntimeconfig.cache
 C:\Users\Dell\Documents\Blazor-web-app\BlazorApp1\obj\Debug\net10.0\ref\BlazorApp1.dll
+C:\Users\Dell\Documents\Blazor-web-app\BlazorApp1\obj\Debug\net10.0\BlazorApp1.sourcelink.json
