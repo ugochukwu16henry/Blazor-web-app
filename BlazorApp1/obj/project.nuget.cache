@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iE4+yvWTrsc=",
+  "dgSpecHash": "6He39Jz+7Us=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\Documents\\Blazor-web-app\\BlazorApp1\\BlazorApp1.csproj",
+  "projectFilePath": "c:\\Users\\Dell\\Documents\\Blazor-web-app\\BlazorApp1\\BlazorApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512"
   ],
